@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: mini-app-propre
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/status
